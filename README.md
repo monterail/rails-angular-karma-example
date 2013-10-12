@@ -6,6 +6,7 @@
 
 ```shell
 npm install -g karma
+npm install -g karma-ng-scenario
 bundle install
 ```
 
