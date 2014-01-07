@@ -38,7 +38,7 @@ module Karma
               port : 9876,
               runnerPort : 9100,
               colors : true,
-              logLevel : LOG_INFO,
+              logLevel : config.LOG_INFO,
               #{proxies}
               urlRoot : '/__karma__/',
               captureTimeout : 60000
