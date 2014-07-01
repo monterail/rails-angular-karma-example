@@ -1,0 +1,31 @@
+{
+  "name": "rails-angular-karma-example",
+  "version": "0.0.1",
+  "description": "![\"Example\"](https://dl.dropbox.com/s/62pc1b20ow3mnr0/2013-07-16_at_8.45.50_PM.png)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-ng-scenario": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monterail/rails-angular-karma-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monterail/rails-angular-karma-example/issues"
+  },
+  "homepage": "https://github.com/monterail/rails-angular-karma-example"
+}
