@@ -32,15 +32,24 @@ module Karma
               files : #{files},
               exclude : [],
               autoWatch : #{!opts[:single_run]},
-              browsers : ['Chrome'],
+              browsers : ['Firefox'],
               singleRun : #{!!opts[:single_run]},
               reporters : ['progress'],
               port : 9876,
               runnerPort : 9100,
               colors : true,
-              logLevel : LOG_INFO,
               #{proxies}
               urlRoot : '/__karma__/',
+              preprocessors: { '**/*.coffee': ['coffee'] },
+              coffeePreprocessor: {
+                options: {
+                  bare: true,
+                  sourceMap: false
+                },
+                transformPath: function(path) {
+                  return path.replace(/\.coffee$/, '.js');
+                }
+              },
               captureTimeout : 60000
             });
           }
