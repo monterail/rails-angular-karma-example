@@ -57,8 +57,7 @@ module.exports = function(config) {
     // Preprocessors
     preprocessors: {
       '**/*.coffee': ['coffee'],
-      '**/*.slim': ['slim', 'ng-html2js'],
-      '**/*.html': ['ng-html2js']
+      '**/*.html': ['slim', 'ng-html2js']
     },
 
     ngHtml2JsPreprocessor: {
