@@ -71,6 +71,7 @@ GEM
       railties (= 4.1.4)
       sprockets-rails (~> 2.0)
     rails-assets-angular (1.2.18)
+    rails-assets-angular-cache (2.3.7)
     rails-assets-angular-mocks (1.2.18)
       rails-assets-angular (= 1.2.18)
     railties (4.1.4)
@@ -127,6 +128,7 @@ DEPENDENCIES
   pry-rails
   rails (= 4.1.4)
   rails-assets-angular (~> 1.2.0)
+  rails-assets-angular-cache (~> 2.3.7)
   rails-assets-angular-mocks
   sass-rails (~> 4.0.3)
   slim-rails

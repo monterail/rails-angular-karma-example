@@ -2,8 +2,8 @@ describe 'Countries Directive', ->
   $compile = $scope = $httpBackend = element = null
 
   beforeEach ->
-    # shared = angular.module('shared')
-    # shared.constant('Rails', { env: 'test', templates: {} })
+    shared = angular.module('shared')
+    shared.constant('Rails', { env: 'test', templates: {} })
 
     module('application', 'countries.html')
 

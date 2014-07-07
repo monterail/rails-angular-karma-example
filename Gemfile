@@ -11,6 +11,7 @@ gem 'pry-rails'
 gem 'slim-rails'
 
 gem 'rails-assets-angular', '~> 1.2.0'
+gem 'rails-assets-angular-cache', '~> 2.3.7'
 
 group :development, :test do
   gem 'spring'

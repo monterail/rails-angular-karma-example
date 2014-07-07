@@ -5,9 +5,11 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="application">
 
 <%= yield %>
 
+  <%= javascript_include_tag 'application' %>
+  <%= js_env %>
 </body>
 </html>

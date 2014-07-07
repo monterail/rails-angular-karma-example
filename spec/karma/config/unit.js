@@ -13,7 +13,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       APPLICATION_SPEC,
-      'app/assets/templates/**/*.html',
+      'app/assets/templates/**/*.slim',
       'spec/javascripts/**/*_spec.{coffee,js}'
     ],
 
@@ -57,11 +57,12 @@ module.exports = function(config) {
     // Preprocessors
     preprocessors: {
       '**/*.coffee': ['coffee'],
-      '**/*.html': ['slim', 'ng-html2js']
+      '**/*.slim': ['slim', 'ng-html2js']
     },
 
     ngHtml2JsPreprocessor: {
-      stripPrefix: 'app/assets/templates/'
+      stripPrefix: 'app/assets/templates/',
+      stripSufix: '.slim'
     }
   });
 };
