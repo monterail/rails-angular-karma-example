@@ -5,7 +5,6 @@ angular.module('shared').config [
   ($provide, $httpProvider, Rails) ->
     $provide.factory 'railsAssetsInterceptor', ['$angularCacheFactory', ($angularCacheFactory) ->
       request: (config) ->
-        console.log Rails.templates
         if assetUrl = Rails.templates[config.url]
           config.url = assetUrl
 
