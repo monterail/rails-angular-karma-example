@@ -10,7 +10,8 @@ namespace :karma  do
   private
 
   def with_tmp_config(command, args = nil)
-    Tempfile.open('karma_unit.js', Rails.root.join('tmp')) do |f|
+    # Change to [.., '.coffee'] for any CS config files
+    Tempfile.open(['karma_unit', '.js'], Rails.root.join('tmp')) do |f|
       f.write unit_js(application_spec_files)
       f.flush
 
