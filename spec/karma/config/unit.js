@@ -14,7 +14,7 @@ module.exports = function(config) {
     files: [
       APPLICATION_SPEC,
       'app/assets/templates/**/*.slim',
-      'spec/javascripts/**/*_spec.{coffee,js}'
+      'spec/javascripts/**/*_spec.{coffee,js,js.coffee}'
     ],
 
     // list of files to exclude
